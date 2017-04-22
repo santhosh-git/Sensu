@@ -1,0 +1,11 @@
+{
+ "checks": {
+    "check-disk-usage": {
+      "handlers": ["mailer"],
+      "command": "/etc/sensu/plugins/check-disk-usage.rb -w 80 -c 90",
+      "interval": 60,
+      "subscribers": [ "linux" ]
+    }
+  }
+}
+

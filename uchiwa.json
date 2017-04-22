@@ -1,0 +1,27 @@
+{
+   "sensu": [
+        {
+            "name": "Sensu",
+            "host": "localhost",
+            "port": 4567,
+            "timeout": 5
+        }
+            ],
+    "uchiwa": {
+        "port": 3000,
+        "stats": 10,
+        "refresh": 10000,
+
+    "users": [
+      {
+        "username" : "admin",
+        "password": "W@tch",
+        "role": {
+          "readonly": false
+                 }
+      }     
+     
+              ]
+                }
+}
+

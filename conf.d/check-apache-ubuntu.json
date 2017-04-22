@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "check-apache": {
+      "handlers": ["mailer"],
+      "command": "/etc/sensu/plugins/check-process.rb -p apache",
+      "interval": 30,
+        "occurrences": 3,
+      "subscribers": [ "apache" ]
+    }
+  }
+}
+

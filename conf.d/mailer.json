@@ -1,0 +1,11 @@
+{
+    "mailer": {
+        "admin_gui": "http://23.23.66.1:3000/",
+        "mail_from": "santhoshkumar@powerupcloud.com",
+        "mail_to": "santhoshkumar@powerupcloud.com",
+        "smtp_address": "localhost",
+        "smtp_port": "25",
+        "smtp_domain": "localhost"
+    }
+}
+

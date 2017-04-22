@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "Memory-Usage": {
+      "handlers": ["mailer"],
+      "command": "/etc/sensu/plugins/check-memory-percent.rb -w 80 -c 90 ",
+      "interval": 60,
+        "occurrences": 5,
+      "refresh": 3600,
+      "subscribers": [ "linux" ]
+    }
+  }
+}
+

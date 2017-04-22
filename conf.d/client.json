@@ -1,0 +1,14 @@
+{
+  "client": {
+    "name": "sensu-server",
+    "address": "127.0.0.1",
+    "environment": "sensu",
+    "subscriptions": [ "sensu" ],
+    "handlers": ["mailer"],
+    "socket": {
+      "bind": "127.0.0.1",
+      "port": 3030
+    }
+  }
+}
+
