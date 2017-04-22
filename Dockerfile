@@ -29,6 +29,10 @@ RUN cd /opt/sensu/embedded/bin && sudo sensu-install -p cpu-checks && sudo sensu
 
 RUN sudo apt-get install -y git && git clone git://github.com/opinionlab/sensu-metrics-relay.git && cd sensu-metrics-relay && cp -R lib/sensu/extensions/* /etc/sensu/extensions && mkdir -p /data/log/supervisor
 
+RUN rabbitmqctl add_vhost /sensu
+RUN rabbitmqctl add_user sensu secret
+RUN rabbitmqctl set_permissions -p /sensu sensu ".*" ".*" ".*" 
+
 RUN sudo service sensu-server start && sudo service redis-server start && sudo service rabbitmq-server start && sudo service sensu-api start && sudo service sensu-client start 
 
 EXPOSE 5672 3000
