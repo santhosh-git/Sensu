@@ -22,7 +22,7 @@
     Uchiwa   - http://your-IP:3000
     RabbitMQ - http://your-IP:15672
     
-  Note : SSL location for sensu clients (/opt/sensu_ssl_tool/client/)
+  Note : RabbitMQ SSL file location for sensu clients (/opt/sensu_ssl_tool/client/)
 
   
     
