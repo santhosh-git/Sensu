@@ -10,7 +10,7 @@
     "uchiwa": {
         "port": 3000,
         "stats": 10,
-        "refresh": 10000,
+        "refresh": 10,
 
     "users": [
       {
