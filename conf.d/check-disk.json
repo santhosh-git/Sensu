@@ -2,8 +2,10 @@
  "checks": {
     "check-disk-usage": {
       "handlers": ["mailer"],
-      "command": "/etc/sensu/plugins/check-disk-usage.rb -w 80 -c 90",
+      "command": "/opt/sensu/embedded/bin/check-disk-usage.rb -w 80 -c 90",
       "interval": 60,
+      "occurrences": 5,
+      "refresh": 3600,
       "subscribers": [ "linux" ]
     }
   }

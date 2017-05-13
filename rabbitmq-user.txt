@@ -1,7 +1,11 @@
-
+# Create sensu user
 
 rabbitmqctl add_vhost /sensu
 rabbitmqctl add_user sensu secret
 rabbitmqctl set_permissions -p /sensu sensu ".*" ".*" ".*"
 
+# Create management user
 
+rabbitmqctl add_user admin secret
+rabbitmqctl set_user_tags admin administrator
+rabbitmqctl set_permissions -p / admin ".*" ".*" ".*"
