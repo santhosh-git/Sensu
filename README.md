@@ -11,7 +11,7 @@
     docker build -t sensu .
     
   # To Run
-    docker run -d -p 3000:3000 -p 5671:5671 -p 15672:15672  -it --name sensu  santhoz/sensu
+    docker run -d -p 3000:3000 -p 5671:5671 -p 15672:15672  -it --name sensu  santhoz/sensu:latest
     
   # Create a RabbitMQ virtual host and user for Sensu
     rabbitmqctl add_vhost /sensu
